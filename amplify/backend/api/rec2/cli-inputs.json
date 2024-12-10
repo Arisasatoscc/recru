@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/sample": {
+      "name": "/sample",
+      "lambdaFunction": "rec2",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

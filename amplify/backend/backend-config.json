@@ -1,1 +1,43 @@
-{}
+{
+  "api": {
+    "rec2": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "rec2"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "rec2": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_rec2_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "rec2"
+        }
+      ]
+    },
+    "AMPLIFY_function_rec2_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "rec2"
+        }
+      ]
+    }
+  }
+}
