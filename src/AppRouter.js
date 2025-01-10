@@ -1,19 +1,26 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import App from "./App"; // 遷移元のページ
-import Inforsession from "./Inforsession"; // 遷移先のページ
-import Studentregister from "./Studentregister";
+import SC01 from "./components/SC01"; // 遷移元のページ
+import SC03 from "./components/SC03"; // 遷移先のページ
+import SC04 from "./components/SC04";
+import { useCookies } from "react-cookie";
 
-function MainRouter() {
+
+function AppRouter() {
+  const [cookies, setCookie] = useCookies();
+  if (!cookies.recruit_year) {
+    setCookie("recruit_year", new Date().getFullYear());
+  }
+
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/inforsession" element={<Inforsession />} />
-        <Route path="/studentregister" element={<Studentregister />} /> 
+        <Route path="/" element={<SC01 />} />
+        <Route path="/SC03" element={<SC03 />} />
+        <Route path="/SC04" element={<SC04 />} />
       </Routes>
     </Router>
   );
 }
 
-export default MainRouter;
+export default AppRouter;

@@ -6,6 +6,7 @@
     "@aws-amplify/ui-react": "^6.7.1",
     "cra-template": "1.2.0",
     "react": "^18.3.1",
+    "react-cookie": "^7.2.2",
     "react-dom": "^18.3.1",
     "react-router-dom": "^7.0.2",
     "react-scripts": "5.0.1",

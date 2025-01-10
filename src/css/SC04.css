@@ -1,0 +1,15 @@
+.background {
+    position: relative;
+    top: 250px;
+    width: 1920px;
+    height: 1080px;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000000;
+}
+
